@@ -1,0 +1,181 @@
+:root {
+  --primary-color: rgb(56, 3, 124); /* Roxo como cor principal */
+  --secondary-color: #f8ab43; /* Laranja como cor secundária (referência ao cajueiro) */
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+}
+
+#logo {
+    height: 30px;
+    width: 30px;
+    margin: 0px 5px;
+}
+
+
+.site-navbar {
+  background-color: var(--primary-color);
+}
+
+.site-cta {
+  background-color: var(--primary-color);
+}
+
+.btn-cta {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  border-radius: 30px;
+  padding: 8px 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: rgb(90, 44, 150);
+  border-color: rgb(90, 44, 150);
+}
+
+.btn-outline-cta {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 30px;
+  padding: 8px 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-cta:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+
+.page-header {
+  position: relative;
+  height: 500px;
+  background-image: url('../images/banner-cursos.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.page-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+
+.course-card {
+  border-radius: 12px;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+
+.btn {
+  border-radius: 30px;
+  padding: 8px 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4A4A4A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.display-4 {
+    color: var(--light-color);
+}
+
+
+.course-level {
+    background-color: var(--primary-color) !important;
+    padding: 6px 12px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    border-radius: 20px;
+}
+
+.icon-check {
+    color: #28a745;
+}
+
+.icon-available {
+    color: #28a745;
+}
+
+.icon-unavailable {
+    color: #dc3545;
+}
+
+
+.table-header {
+    background-color: rgba(56, 3, 124, 0.1);
+}
+
+
+.site-footer a {
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.site-footer a:hover {
+    opacity: 0.8;
+}
+
+
+.faq-accordion .accordion-button:not(.collapsed) {
+    color: var(--primary-color);
+    background-color: rgba(56, 3, 124, 0.05);
+}
+
+.btn-lg {
+    padding: 10px 30px;
+    font-size: 1.125rem;
+}
+
+.btn-sm {
+    padding: 5px 15px;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+.page-header {
+    height: 400px;
+}
+
+.banner-content h1 {
+    font-size: 2rem;
+}
+}
+
+@media (max-width: 576px) {
+.page-header {
+    height: 300px;
+}
+}

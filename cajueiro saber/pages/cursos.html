@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Cajueiro Tech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/cursos.css">
+</head>
+<body>
+    <!-- Loading Indicator -->
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Botão de voltar ao topo -->
+    <div class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Navbar - Alterada para fixed-top -->
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="../images/caju.svg" id="logo" alt="Logo Cajueiro">Cajueiro Tech
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html#depoimentos">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header hero-banner">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="banner-content text-center text-white">
+                <h1 class="display-4 fw-bold">Nossos Cursos</h1>
+                <p class="lead">Programas desenvolvidos para impulsionar seu negócio em cada fase</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold section-title">Escolha o programa ideal para o seu momento</h2>
+                <p class="lead section-description">Nossos programas são desenvolvidos para atender empreendedores em diferentes estágios da jornada</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses-section py-5 bg-light">
+        <div class="container">
+            <article class="course-item row align-items-center mb-5 py-4" id="startup-one">
+                <div class="course-image col-lg-6 mb-4 mb-lg-0">
+                    <img src="../images/startup.jpg" alt="Startup One" class="img-fluid rounded shadow">
+                </div>
+                <div class="course-details col-lg-6">
+                    <div class="course-card border-0 bg-transparent">
+                        <div class="card-body">
+                            <span class="course-level badge mb-2">Iniciante</span>
+                            <h2 class="course-title card-title fw-bold">Startup One</h2>
+                            <p class="course-tagline card-text lead">Comece sua jornada empreendedora com confiança</p>
+                            <p class="course-description">O programa Startup One é perfeito para quem está dando os primeiros passos no empreendedorismo. Com acesso a vídeos de treinamento e apostilas digitais, você aprenderá os fundamentos essenciais para transformar sua ideia em um negócio viável.</p>
+                            <h5 class="learning-topics-title mt-4">O que você vai aprender:</h5>
+                            <ul class="learning-topics list-unstyled mb-4">
+                                <li><i class="fas fa-check-circle icon-check me-2"></i> Validação de ideias de negócio</li>
+                                <li><i class="fas fa-check-circle icon-check me-2"></i> Análise básica de mercado</li>
+                                <li><i class="fas fa-check-circle icon-check me-2"></i> Desenvolvimento de MVP (Produto Mínimo Viável)</li>
+                                <li><i class="fas fa-check-circle icon-check me-2"></i> Noções de marketing digital</li>
+                            </ul>
+                            <div class="course-pricing d-flex align-items-center">
+                                <h4 class="course-price me-3 mb-0">R$ 297,00</h4>
+                                <span class="course-old-price text-muted text-decoration-line-through">R$ 397,00</span>
+                            </div>
+                            <div class="course-actions mt-4">
+                                <a href="#" class="btn btn-cta me-2">Matricule-se</a>
+                                <a href="#" class="btn btn-outline-cta">Ver demonstração</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <hr class="course-divider my-5">
+
+            <article class="course-item row align-items-center mb-5 py-4" id="startup-plus">
+                <div class="course-image col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="../images/startup.jpg" alt="Startup Plus" class="img-fluid rounded shadow">
+                </div>
+                <div class="course-details col-lg-6 order-lg-1">
+                    <div class="course-card border-0 bg-transparent">
+                        <div class="card-body">
+                            <span class="course-level badge mb-2">Intermediário</span>
+                            <h2 class="course-title card-title fw-bold">Startup Plus</h2>
+                            <p class="course-tagline card-text lead">Eleve seu negócio ao próximo nível</p>
+                            <p class="course-description">O programa Startup Plus é ideal para empreendedores que já têm uma ideia validada e buscam estruturar seu negócio. Inclui vídeos, apostilas e mentorias sobre construção de produtos, estratégias de crescimento e outros cursos complementares.</p>
+                            <h5 class="learning-topics-title mt-4">O que você vai aprender:</h5>
+                            <ul class="learning-topics list-unstyled mb-4">
+                                <li><i class="fas fa-check-circle icon-check me-2"></i> Desenvolvimento de produto avançado</li>
+                                <li><i class="fas fa-check-circle icon-check me-2"></i> Estruturação de modelo de negócio</li>
+                                <li><i class="fas fa-check-circle icon-check me-2"></i> Estratégias de aquisição de clientes</li>
+                                <li><i class="fas fa-check-circle icon-check me-2"></i> Mentorias mensais em grupo</li>
+                                <li><i class="fas fa-check-circle icon-check me-2"></i> Acesso à comunidade de empreendedores</li>
+                            </ul>
+                            <div class="course-pricing d-flex align-items-center">
+                                <h4 class="course-price me-3 mb-0">R$ 597,00</h4>
+                                <span class="course-old-price text-muted text-decoration-line-through">R$ 797,00</span>
+                            </div>
+                            <div class="course-actions mt-4">
+                                <a href="#" class="btn btn-cta me-2">Matricule-se</a>
+                                <a href="#" class="btn btn-outline-cta">Ver demonstração</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <hr class="course-divider my-5">
+
+            <article class="course-item row align-items-center mb-5 py-4" id="startup-master">
+                <div class="course-image col-lg-6 mb-4 mb-lg-0">
+                    <img src="../images/startup.jpg" alt="Startup Master" class="img-fluid rounded shadow">
+                </div>
+                <div class="course-details col-lg-6">
+                    <div class="course-card border-0 bg-transparent">
+                        <div class="card-body">
+                            <span class="course-level badge mb-2">Avançado</span>
+                            <h2 class="course-title card-title fw-bold">Startup Master</h2>
+                            <p class="course-tagline card-text lead">Pacote completo para empreendedores determinados</p>
+                            <p class="course-description">O programa Startup Master é nossa solução completa para empreendedores ambiciosos. Oferece todos os benefícios e conteúdos sobre como construir uma startup do zero, incluindo mentorias individuais, workshops exclusivos e materiais extras para impulsionar seu crescimento.</p>
+                            <h5 class="learning-topics-title mt-4">O que você vai aprender:</h5>
+                            <ul class="learning-topics list-unstyled mb-4">
+                                <li><i class="fas fa-check-circle icon-check me-2"></i> Tudo dos pacotes anteriores</li>
+                                <li><i class="fas fa-check-circle icon-check me-2"></i> Mentorias individuais mensais</li>
+                                <li><i class="fas fa-check-circle icon-check me-2"></i> Estratégias de captação de investimento</li>
+                                <li><i class="fas fa-check-circle icon-check me-2"></i> Workshops exclusivos com especialistas</li>
+                                <li><i class="fas fa-check-circle icon-check me-2"></i> Acesso vitalício às atualizações de conteúdo</li>
+                                <li><i class="fas fa-check-circle icon-check me-2"></i> Suporte prioritário</li>
+                            </ul>
+                            <div class="course-pricing d-flex align-items-center">
+                                <h4 class="course-price me-3 mb-0">R$ 997,00</h4>
+                                <span class="course-old-price text-muted text-decoration-line-through">R$ 1.297,00</span>
+                            </div>
+                            <div class="course-actions mt-4">
+                                <a href="#" class="btn btn-cta me-2">Matricule-se</a>
+                                <a href="#" class="btn btn-outline-cta">Ver demonstração</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="comparison-section py-5">
+        <div class="container">
+            <h2 class="comparison-title text-center mb-5">Compare nossos programas</h2>
+            <div class="table-responsive">
+                <table class="comparison-table table table-hover">
+                    <thead class="table-header">
+                        <tr>
+                            <th scope="col">Recursos</th>
+                            <th scope="col" class="text-center">Startup One</th>
+                            <th scope="col" class="text-center">Startup Plus</th>
+                            <th scope="col" class="text-center">Startup Master</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vídeos de treinamento</td>
+                            <td class="text-center"><i class="fas fa-check icon-available"></i></td>
+                            <td class="text-center"><i class="fas fa-check icon-available"></i></td>
+                            <td class="text-center"><i class="fas fa-check icon-available"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Apostilas digitais</td>
+                            <td class="text-center"><i class="fas fa-check icon-available"></i></td>
+                            <td class="text-center"><i class="fas fa-check icon-available"></i></td>
+                            <td class="text-center"><i class="fas fa-check icon-available"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Comunidade de empreendedores</td>
+                            <td class="text-center"><i class="fas fa-times icon-unavailable"></i></td>
+                            <td class="text-center"><i class="fas fa-check icon-available"></i></td>
+                            <td class="text-center"><i class="fas fa-check icon-available"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Mentorias em grupo</td>
+                            <td class="text-center"><i class="fas fa-times icon-unavailable"></i></td>
+                            <td class="text-center"><i class="fas fa-check icon-available"></i></td>
+                            <td class="text-center"><i class="fas fa-check icon-available"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Mentorias individuais</td>
+                            <td class="text-center"><i class="fas fa-times icon-unavailable"></i></td>
+                            <td class="text-center"><i class="fas fa-times icon-unavailable"></i></td>
+                            <td class="text-center"><i class="fas fa-check icon-available"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Workshops exclusivos</td>
+                            <td class="text-center"><i class="fas fa-times icon-unavailable"></i></td>
+                            <td class="text-center"><i class="fas fa-times icon-unavailable"></i></td>
+                            <td class="text-center"><i class="fas fa-check icon-available"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Suporte prioritário</td>
+                            <td class="text-center"><i class="fas fa-times icon-unavailable"></i></td>
+                            <td class="text-center"><i class="fas fa-times icon-unavailable"></i></td>
+                            <td class="text-center"><i class="fas fa-check icon-available"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Acesso às atualizações</td>
+                            <td class="text-center">6 meses</td>
+                            <td class="text-center">12 meses</td>
+                            <td class="text-center">Vitalício</td>
+                        </tr>
+                        <tr class="price-row table-light">
+                            <td class="fw-bold">Valor</td>
+                            <td class="text-center fw-bold">R$ 297,00</td>
+                            <td class="text-center fw-bold">R$ 597,00</td>
+                            <td class="text-center fw-bold">R$ 997,00</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="text-center"><a href="#" class="btn btn-sm btn-cta">Matricule-se</a></td>
+                            <td class="text-center"><a href="#" class="btn btn-sm btn-cta">Matricule-se</a></td>
+                            <td class="text-center"><a href="#" class="btn btn-sm btn-cta">Matricule-se</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section py-5 site-cta text-white">
+        <div class="container text-center">
+            <h2 class="cta-title mb-4">Ainda está com dúvidas sobre qual curso escolher?</h2>
+            <p class="cta-description lead mb-4">Agende uma conversa gratuita com nossos consultores e descubra o programa ideal para o seu momento.</p>
+            <a href="contato.html" class="btn btn-light btn-lg">Fale com um consultor</a>
+        </div>
+    </section>
+
+    <section class="faq-section py-5">
+        <div class="container">
+            <h2 class="faq-title text-center mb-5">Perguntas Frequentes</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion faq-accordion" id="faqAccordion">
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Quanto tempo terei acesso aos materiais?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body faq-answer">
+                                    O acesso varia de acordo com o plano: Startup One (6 meses), Startup Plus (12 meses) e Startup Master (acesso vitalício a todas as atualizações).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Posso fazer upgrade do meu plano posteriormente?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body faq-answer">
+                                    Sim! Você pode fazer upgrade para um plano superior a qualquer momento, pagando apenas a diferença entre os valores.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    As mentorias são ao vivo ou gravadas?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body faq-answer">
+                                    Todas as mentorias são realizadas ao vivo, via videoconferência. As sessões em grupo são agendadas com antecedência, enquanto as mentorias individuais podem ser agendadas de acordo com a sua disponibilidade.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Vocês oferecem garantia de satisfação?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body faq-answer">
+                                    Sim! Oferecemos garantia de satisfação de 15 dias. Se você não ficar satisfeito com o conteúdo, pode solicitar o reembolso integral dentro desse período.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="footer-title"><img src="../images/caju.svg" id="logo" alt="Logo Cajueiro">Cajueiro Tech</h5>
+                    <p class="footer-tagline">Onde negócios ganham vida</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <ul class="footer-social list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright mb-0">&copy; 2025 Cajueiro Tech. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

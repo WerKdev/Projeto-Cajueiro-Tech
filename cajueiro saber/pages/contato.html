@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Cajueiro Tech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/cursos.css">
+    <style>
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: rgba(56, 3, 124, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin: 0 auto 1rem;
+        }
+        
+        .contact-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+        }
+        
+        .form-control {
+            border-radius: 8px;
+            padding: 12px 15px;
+            border: 1px solid #ced4da;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(56, 3, 124, 0.25);
+        }
+        
+        .form-label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .social-contact {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(56, 3, 124, 0.1);
+            color: var(--primary-color);
+            border-radius: 50%;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-contact:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Indicator -->
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Botão de voltar ao topo -->
+    <div class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Navbar - Alterada para fixed-top -->
+    <!-- Navbar - Alterada para fixed-top -->
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="../images/caju.svg" id="logo" alt="Logo Cajueiro">Cajueiro Tech
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html#depoimentos">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>     
+
+    <!-- Header Banner -->
+    <header class="page-header hero-banner">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="banner-content text-center text-white">
+                <h1 class="display-4 fw-bold">Entre em Contato</h1>
+                <p class="lead">Estamos prontos para impulsionar sua jornada empreendedora</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Informações de Contato -->
+    <section class="contact-info py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold section-title mb-4">Como podemos ajudar?</h2>
+                    <p class="lead section-description">Entre em contato conosco pelos canais abaixo ou preencha o formulário</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="contact-card card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3 class="contact-title h5 mb-3">Endereço</h3>
+                            <p class="contact-text mb-0">Av. Tancredo Neves, 2227</p>
+                            <p class="contact-text mb-0">Caminho das Árvores</p>
+                            <p class="contact-text">Salvador - BA, 41820-021</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="contact-card card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3 class="contact-title h5 mb-3">Telefone</h3>
+                            <p class="contact-text mb-0">Geral: (71) 3333-2222</p>
+                            <p class="contact-text mb-0">Suporte: (71) 99999-8888</p>
+                            <p class="contact-text">Seg - Sex: 09:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="contact-card card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3 class="contact-title h5 mb-3">Email</h3>
+                            <p class="contact-text mb-0">contato@cajueirotech.com.br</p>
+                            <p class="contact-text mb-0">suporte@cajueirotech.com.br</p>
+                            <p class="contact-text">comercial@cajueirotech.com.br</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato e Mapa -->
+    <section class="contact-form-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="fw-bold section-title mb-4">Envie sua mensagem</h2>
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Nome completo</label>
+                                <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="seu.email@exemplo.com" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="(DDD) 99999-9999">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Assunto</label>
+                            <select class="form-select" id="subject" required>
+                                <option value="" selected disabled>Selecione um assunto</option>
+                                <option value="informacoes">Informações sobre cursos</option>
+                                <option value="suporte">Suporte técnico</option>
+                                <option value="parcerias">Parcerias</option>
+                                <option value="feedbacks">Feedbacks</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="newsletter" checked>
+                            <label class="form-check-label" for="newsletter">
+                                Desejo receber a newsletter com novidades e conteúdos gratuitos
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-cta">Enviar mensagem</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold section-title mb-4">Onde estamos</h2>
+                    <div class="map-container">
+                        <img src="/api/placeholder/600/400" alt="Mapa" class="img-fluid">
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="mb-3">Siga-nos nas redes sociais</h4>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="social-contact">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-contact">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-contact">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-contact">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-contact">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perguntas Frequentes -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <h2 class="faq-title text-center mb-5">Perguntas Frequentes</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion faq-accordion" id="faqAccordion">
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Qual é o prazo de resposta para mensagens?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body faq-answer">
+                                    Respondemos a todas as mensagens em até 24 horas úteis. Em casos de urgência, recomendamos entrar em contato pelo telefone para atendimento mais rápido.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Como posso agendar uma visita ou reunião?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body faq-answer">
+                                    Você pode agendar uma visita ou reunião preenchendo o formulário de contato e selecionando o assunto "Informações sobre cursos" ou ligando para o nosso telefone comercial. Atendemos com hora marcada de segunda a sexta, das 9h às 18h.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Oferecem suporte técnico para alunos dos cursos?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body faq-answer">
+                                    Sim, oferecemos suporte técnico para todos os alunos através do e-mail suporte@cajueirotech.com.br ou pelo telefone (71) 99999-8888. O horário de atendimento é de segunda a sexta, das 9h às 18h.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Como posso propor uma parceria com a Cajueiro Tech?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body faq-answer">
+                                    Para propostas de parcerias, por favor, envie um e-mail para comercial@cajueirotech.com.br com os detalhes da proposta ou preencha o formulário de contato selecionando o assunto "Parcerias". Nossa equipe analisará e retornará o contato em até 3 dias úteis.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 site-cta text-white">
+        <div class="container text-center">
+            <h2 class="cta-title mb-4">Vamos transformar suas ideias em negócios de sucesso!</h2>
+            <p class="cta-description lead mb-4">Estamos ansiosos para fazer parte da sua jornada empreendedora e ajudar seu negócio a crescer.</p>
+            <a href="cursos.html" class="btn btn-light btn-lg">Conheça nossos cursos</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="footer-title"><img src="../images/caju.svg" id="logo" alt="Logo Cajueiro">Cajueiro Tech</h5>
+                    <p class="footer-tagline">Onde negócios ganham vida</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <ul class="footer-social list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright mb-0">&copy; 2025 Cajueiro Tech. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Script para validação do formulário
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            
+            if(form) {
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    
+                    // Aqui você adicionaria a lógica de envio do formulário
+                    // Por enquanto, apenas exibimos uma mensagem de sucesso
+                    
+                    alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+                    form.reset();
+                });
+            }
+            
+            // Efeito de hover nos cards
+            const cards = document.querySelectorAll('.contact-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.classList.add('card-hover');
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.classList.remove('card-hover');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+/* Estilo complementar para a página Sobre */
+.page-header2 {
+  position: relative;
+  height: 500px;
+  background-image: url('../images/banner-sobre.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.page-header2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.page-header2 .container {
+  position: relative;
+  z-index: 2;
+}
+
+.about-image-container {
+    position: relative;
+    margin: 20px;
+}
+
+.about-image {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.about-image-accent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    top: -15px;
+    left: -15px;
+    z-index: 0;
+    border-radius: 4px;
+}
+
+.about-image-accent.right {
+    top: -15px;
+    left: 15px;
+}
+
+.about-image-container:hover .about-image {
+    transform: translateY(-5px);
+}
+
+/* Estatísticas */
+.stat-item {
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: inline-block;
+}
+
+.stat-plus {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.stat-text {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: var(--dark-color);
+}
+
+/* Cards de visão */
+.visao-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.visao-card:hover, .publico-card:hover, .equipe-card:hover,
+.card-hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.visao-icon, .publico-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: rgba(56, 3, 124, 0.1);
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+/* Itens de metodologia */
+.metodologia-item
+{
+    height: 100.19px;
+    gap: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+}
+.metodologia-number {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+/* Cards de público-alvo */
+.publico-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.publico-list li {
+    margin-bottom: 5px;
+}
+
+/* Equipe */
+.equipe-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.equipe-img-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--primary-color);
+}
+
+.equipe-social-link {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background-color: rgba(56, 3, 124, 0.1);
+    color: var(--primary-color);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.equipe-social-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Valores */
+.valores-item {
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.valores-accordion .accordion-button:not(.collapsed) {
+    color: var(--primary-color);
+    background-color: rgba(56, 3, 124, 0.05);
+    box-shadow: none;
+}
+
+.valores-accordion .accordion-button {
+    font-weight: 600;
+    padding: 15px 20px;
+}
+
+.valores-accordion .accordion-body {
+    padding: 15px 20px;
+}
+
+/* CTA Buttons */
+.cta-buttons .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .about-image-container {
+        margin: 10px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .stat-plus {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-image-accent {
+        display: none;
+    }
+    
+    .stat-item {
+        padding: 10px;
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+    }
+    
+    .stat-plus {
+        font-size: 1.4rem;
+    }
+    
+    .cta-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .cta-buttons .btn-lg {
+        margin-right: 0 !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .valores-intro {
+        font-size: 0.9rem;
+    }
+    
+    .valores-accordion .accordion-button {
+        font-size: 0.9rem;
+        padding: 12px 15px;
+    }
+    
+    .valores-accordion .accordion-body {
+        font-size: 0.9rem;
+        padding: 12px 15px;
+    }
+}
